@@ -185,8 +185,14 @@ m_pd3dDevice->SetTransform(D3DTS_VIEW, &matTemp );
 
 
 
+// from gists
+D3DXVec3Cross( &v3Cross, &v3Up, &vNormal );
+fDot = D3DXVec3Dot( &v3Up, &vNormal );
+fTheta = acos( fDot );
 
 
 
+
+// 
 
 
